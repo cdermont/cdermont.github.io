@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Clau Dermont</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=fira-sans:300,400" rel="stylesheet" />
+<meta name="referrer" content="no-referrer">
+<style>
+body {font-family: "Fira Sans", sans-serif; font-weight: 300}
+h1,h2,h3,h4,h5,h6 {font-family: "Fira Sans", sans-serif; font-weight: 400}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+.shadow {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/bgdartgas.jpg");
+    min-height: 100%;
+}
+
+.w3-theme {color:#fff !important;background-color:#b93a32 !important}
+.w3-text-theme {color:#fff !important;background-color:#b93a32 !important}
+.w3-ico {color:#b93a32 !important;background-color:#fff !important}
+.w3-ico-inv {color:#fff}
+.w3-text-darkredx {color:#b93a32}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+	<div class="w3-bar w3-black w3-card">
+	  <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+	  <a href="#" class="w3-bar-item w3-button w3-padding-large">CASA</a>
+	  <a href="#jeu" class="w3-bar-item w3-button w3-padding-large w3-hide-small">JEU</a>
+	  <a href="#proj" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+	  <a href="#publi" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICAZIUNS</a>
+	  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+	</div>
+  </div>
+  
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+	<a href="#jeu" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">JEU</a>
+	<a href="#proj" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+	<a href="#publi" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICAZIUNS</a>
+	<a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  </div>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white shadow" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Clau Dermont</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Clau Dermont</span><br>
+    <span class="w3-large">Political Scientist.</span>
+  </div>
+  <div class="w3-display-bottomleft w3-text-grey w3-xlarge shadow" style="padding:24px 48px">
+    <a href="https://github.com/cdermont"><img src="ico/github-original.svg" alt class="w3-hover-opacity wr-ico-inv" width="25"></a>
+    <a href="https://scholar.google.ch/citations?user=d6rU1P4AAAAJ&hl=de&oi=ao"><img src="ico/google.svg" alt class="w3-hover-opacity wr-ico-inv" width="25"></a>
+    <a href="https://ch.linkedin.com/in/clau-dermont-a59baa126"><img src="ico/linkedin-original.svg" alt class="w3-hover-opacity wr-ico-inv" width="25"></a>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+  <!-- Jeu Section -->
+	<div class="w3-container w3-content w3-padding-64" style="max-width:900px;" id="jeu">
+	  <h3 class="w3-center">grwatch.ch</h3>
+
+	  <p>Von 2015 bis 2021 war die Webseite grwatch.ch eine Möglichkeit, um mehr zu erfahren über die Arbeit des Bündner Grossen Rates. Anhand der Abstimmungsdaten, welche seit 2015 vom Kanton Graubünden publiziert werden, kann einerseits das Abstimmungsverhalten der einzelnen Grossratsmitglieder nachvollzogen werden. Andererseits können diese Daten auch genutzt werden, um zusammenfassende Informationen zu berechnen, wie Anwesenheitsquote, Parteiloyalität oder Fraktionsdisziplin.</p>
+
+	  <p>Das Projekt ist ausgelaufen. Auf Anfrage sind die entsprechenden Daten und Codes verfügbar. Für die Erarbeitung von grwatch.ch wurden einerseits R-Scripts genutzt (Daten runterladen, transformieren, abspeichern) sowie d3.js-Scripte für die Visualisierung der Daten.</p>
+
+	  <img src="img/grwatch_ex1.jpg" alt="Beispiel grwatch.ch, Abstimmungsentscheide" class="w3-image" width="400">
+
+	  <img src="img/grwatch_ex2.jpg" alt="Beispiel grwatch.ch, Positionierung" class="w3-image" width="400">
+
+	  <img src="img/grwatch_ex3.jpg" alt="Beispiel grwatch.ch, Disziplin" class="w3-image" width="400">
+
+	</div>
+
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:900px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+	<p class="w3-center w3-large"><i class="fa fa-envelope fa-fw w3-margin-right"></i>clau.dermont@pm.me</p>
+	<p class="w3-center w3-large"><i class="fab fa-twitter fa-fw w3-margin-right"></i><a href="https://twitter.com/claudermont">@claudermont</a></p>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge">
+  <p class="w3-medium"><i class="far fa-copyright"></i> Clau Dermont 2019. Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+
+</body>
+</html>
